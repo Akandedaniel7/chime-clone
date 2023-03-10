@@ -6,10 +6,12 @@ module.exports = {
       colors:{
         'green':'rgb(14, 135, 91);',
         'greenL':'rgb(17, 171, 115)',
-        'red':'rgb(239, 0, 0);'
+        'red':'rgb(239, 0, 0);',
+        'notice': 'rgb(71,71,71);'
       },
       fontFamily:{
-        'h1': 'header font'
+        'h1': 'header font',
+        'body': 'body font'
       }
     },
   },

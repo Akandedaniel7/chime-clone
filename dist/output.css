@@ -559,6 +559,10 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -582,6 +586,11 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-6 {
@@ -610,6 +619,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-body {
+  font-family: body font;
 }
 
 .font-h1 {
@@ -646,21 +659,24 @@ video {
   color: rgb(14, 135, 91);;
 }
 
+.text-notice {
+  color: rgb(71,71,71);;
+}
+
 .text-red {
   color: rgb(239, 0, 0);;
 }
 
 @font-face {
-  font-family: 'heade font';
+  font-family: 'body font';
 
-  src: url('./fonts/share/Share-Regular.ttf.eot');
+  src: url('/src/fonts/share/Share-Regular.ttf.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('./fonts/share/Share-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('./fonts/share/Share-Regular.ttf.woff') format('woff'), /* Modern Browsers */
-    url('./fonts/share/Share-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('./fonts/share/Share-Regular.ttf.svg') format('svg');
+  src: url('/src/fonts/share/Share-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/src/fonts/share/Share-Regular.ttf.woff') format('woff'), /* Modern Browsers */
+    url('/src/fonts/share/Share-Regular.ttf.svg') format('svg');
 
   /* Legacy iOS */
 }
@@ -679,32 +695,32 @@ video {
   /* Legacy iOS */
 }
 
-body{
-  font-family: 'body font';
-}
-
 h1 {
   color: rgb(14, 135, 91);
   -webkit-text-fill-color: white;
   /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: rgb(14, 135, 91);
-  letter-spacing: 6px;
+  letter-spacing: 9px;
   font-size: 32px !important;
   line-height: 1.2;
   position: relative;
+}
+
+h3{
+  color: rgb(27,27,27);
 }
 
 span{
   color: rgb(14, 135, 91);
   -webkit-text-fill-color: white;
   /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: rgb(14, 135, 91);
   letter-spacing: 6px;
   line-height: 1.2;
   margin-top: -117px;
-  font-size: 21px;
+  font-size: 34px;
   top: 118px;
   position: absolute;
 }
@@ -718,6 +734,7 @@ span{
   outline-style: none;
   transition: .3s;
   border-radius: 4px;
+  font-size: 18px;
 }
 
 .inputs:focus{
