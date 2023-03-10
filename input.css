@@ -26,8 +26,12 @@ h1 {
     letter-spacing: 9px;
     font-size: 32px !important;
     line-height: 1.2;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 auto;
     position: relative;
     text-align: center;
+font-weight: 700;
 }
 
 h3{
@@ -37,6 +41,10 @@ h3{
     margin-bottom:24px;
     text-align: center;
     word-wrap: break-word;
+}
+header{
+  display: flex;
+  padding: 20px;
 }
 
 form{
