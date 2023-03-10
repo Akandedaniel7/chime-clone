@@ -78,6 +78,7 @@ input{
     color: var(--text);
     font-weight: var(--lg-xm);
     padding-left: 7px;
+    display: block;
 }
 
 input:hover{
@@ -89,7 +90,6 @@ input:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 1px;
 }
 
 .btn{
@@ -106,6 +106,10 @@ input:hover{
     padding-bottom: 12px;
 }
 
+.btn a{
+    color: var(--white)
+}
+
 .btn:hover{
     opacity: 3;
 }
@@ -120,7 +124,9 @@ input:hover{
     font-size: 13px;
 }
 
-
+form{
+    width: 100%;
+}
 
 .loginDetails-link a{
     display: block;
@@ -158,6 +164,33 @@ input:hover{
     padding: 0 15rem;
     font-size: 14px;
 }
+
+
+/* Sucessful Page */
+.input2{
+    width: 100%;
+    border: 1px solid var(--text);
+    padding: 12px 0;
+    margin: 4px 0;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: var(--HoverTransition);
+    color: var(--text);
+    font-weight: var(--lg-xm);
+    padding-left: 7px;
+}
+
+.input2:hover{
+    border: 1px solid var(--borderColor)
+}
+
+/* form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+} */
 
 @media all and (max-width: 1110px){
     .paragraph-1 {
