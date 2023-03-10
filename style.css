@@ -3,9 +3,9 @@
 :root{
     /* COLORS */
     --white: rgb(255, 255, 255);
-    --lightGreen: rgb(14, 135, 91);
+    --lightGreen: rgb(17, 171, 115);
     --borderColor: rgb(4, 124, 184);
-    --text: rgb(71,71,71);
+    --text: grey;
 
     /* FONTS  */
     --lg-sm: 300;
@@ -96,11 +96,14 @@ input:hover{
     margin-top: 2rem;
     border-radius: 5px;
     background: var(--lightGreen);
-    padding: 12px 11.5rem;
+    /* padding: 12px 11.5rem; */
     color: var(--white);
     font-size: 19px;
     opacity: 0.89;
     font-weight: var(--lg-sm);
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .btn:hover{
@@ -114,7 +117,7 @@ input:hover{
     flex-direction: column;
     margin-left: -13rem;
     flex-wrap: wrap;
-    
+    font-size: 13px;
 }
 
 
@@ -142,6 +145,7 @@ input:hover{
 .paragraph-1{
     margin-bottom: 2rem;
     padding: 0px 29rem;
+    text-align: center;
 }
 
 .paragraph-2{
@@ -192,9 +196,9 @@ input:hover{
         padding: 0 14px;
       }
 
-      .btn {
+      /* .btn {
         padding: 12px 9.7rem;
-      }
+      } */
 
       .linkB{
         margin-right: 2rem;
@@ -214,9 +218,9 @@ input:hover{
         padding: 0 10px;
       }
 
-      .btn{
+      /* .btn{
         padding: 12px 7rem;
-      }
+      } */
 }
 
 @media all and (max-width: 416px){
