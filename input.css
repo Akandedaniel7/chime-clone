@@ -66,6 +66,7 @@ form :first-child{
 form  p{
   color: red;
   font-weight: 600;
+  padding: 10px 0px 0px;
 }
 
 form > button{
