@@ -9,7 +9,7 @@ module.exports = {
         'red':'rgb(239, 0, 0);'
       },
       fontFamily:{
-        'h1':'header font;'
+        'h1': 'header font'
       }
     },
   },

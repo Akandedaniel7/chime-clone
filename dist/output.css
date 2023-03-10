@@ -527,12 +527,20 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .min-h-\[56px\] {
@@ -545,6 +553,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .gap-2 {
@@ -572,6 +584,11 @@ video {
   padding: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-\[24px\] {
   padding-left: 24px;
   padding-right: 24px;
@@ -596,7 +613,7 @@ video {
 }
 
 .font-h1 {
-  font-family: header font;;
+  font-family: header font;
 }
 
 .text-\[25px\] {
@@ -634,16 +651,16 @@ video {
 }
 
 @font-face {
-  font-family: 'headr font';
+  font-family: 'heade font';
 
-  src: url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf.eot');
+  src: url('./fonts/share/Share-Regular.ttf.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf.svg') format('svg');
+  src: url('./fonts/share/Share-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./fonts/share/Share-Regular.ttf.woff') format('woff'), /* Modern Browsers */
+    url('./fonts/share/Share-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/share/Share-Regular.ttf.svg') format('svg');
 
   /* Legacy iOS */
 }
@@ -651,15 +668,19 @@ video {
 @font-face {
   font-family: 'header font';
 
-  src: url('/chime-clone/src/fonts/share/Share-Regular.ttf.eot');
+  src: url('/src/fonts/indigo/Indigo-Outline-Font-Regular.ttf.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('/chime-clone/src/fonts/share/Share-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/chime-clone/src/fonts/share/Share-Regular.ttf.woff') format('woff'), /* Modern Browsers */
-        url('/chime-clone/src/fonts/share/Share-Regular.ttf.svg') format('svg');
+  src: url('/src/fonts/indigo/Indigo-Outline-Font-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/src/fonts/indigo/Indigo-Outline-Font-Regular.ttf.woff') format('woff'), /* Modern Browsers */
+        url('/src/fonts/indigo/Indigo-Outline-Font-Regular.ttf.svg') format('svg');
 
   /* Legacy iOS */
+}
+
+body{
+  font-family: 'body font';
 }
 
 h1 {
@@ -689,6 +710,7 @@ span{
 }
 
 .inputs{
+  font-family: 'body font';
   /* @apply rgb(226, 226, 226) */
   border: 1px solid rgb(226, 226, 226);
   padding: 11.5px 8px;

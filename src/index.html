@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/chime-clone/dist/output.css" rel="stylesheet">
+    <link href="/dist/output.css"  rel="stylesheet">
     <title>Chime-Bonus</title>
 </head>
 <body>
@@ -40,14 +40,19 @@
     </div>
     </section>
 
+  
+
     <!-- form for verification code -->
     
     <section class="py-10 px-[24px]">
-        <h3 class="uppercase text-[25px] mb-6 text-center break-words">Enter your information below to activate your winning bonus</h3>
+        <h3 class="uppercase text-[25px] mb-6 text-center break-words">Enter the verification code</h3>
         <form action="" class="flex flex-col gap-8">
-            <input type="text" placeholder="Verification Code" required>
-            <input type="email" name="email" id="" placeholder="Email" required>
-       <Button class="bg-greenL text-black w-full font-bold py-3 rounded min-h-[56px] break-words " type="submit" >Proceed</Button>
+            <input class="inputs" type="text" placeholder="Verification Code" required>
+            <div class="flex flex-col gap-2">
+                <input class="inputs" type="email" required placeholder="Email">
+                <p class="text-red font-semibold">Please enter a valid Email address</p>
+                </div>
+       <Button class="bg-greenL text-black w-full font-bold py-3 rounded min-h-[56px] break-words " type="submit" >Verify</Button>
         </form>  
         
         <div class="pt-8 text-center">
@@ -58,7 +63,14 @@
     </p> 
     </div>
     </section>
- 
+
+    <footer class="h-[200px] flex items-center py-10 bg-greenL mt-10">
+        <div class="px-6 break-words text-center">
+<p>Copyright © 2023 Chime   Bonus -  <br> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
 
 </body>
 </html>

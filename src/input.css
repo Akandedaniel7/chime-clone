@@ -4,22 +4,22 @@
 
 
 @font-face {
-    font-family: 'headr font';
-    src: url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/indigo/Indigo-Outline-Font-Regular.ttf.svg') format('svg'); /* Legacy iOS */} 
+    font-family: 'heade font';
+    src: url('/src/fonts/share/Share-Regular.ttf.eot'); /* IE9 Compat Modes */
+    src: url('/src/fonts/share/Share-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/src/fonts/share/Share-Regular.ttf.woff') format('woff'), /* Modern Browsers */
+    url('/src/fonts/share/Share-Regular.ttf.svg') format('svg'); /* Legacy iOS */} 
    
-
 
     @font-face {
         font-family: 'header font';
-        src: url('/chime-clone/src/fonts/share/Share-Regular.ttf.eot'); /* IE9 Compat Modes */
-        src: url('/chime-clone/src/fonts/share/Share-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/chime-clone/src/fonts/share/Share-Regular.ttf.woff') format('woff'), /* Modern Browsers */
-        url('/chime-clone/src/fonts/share/Share-Regular.ttf.svg') format('svg'); /* Legacy iOS */}
+        src: url('/src/fonts/indigo/Indigo-Outline-Font-Regular.ttf.eot'); /* IE9 Compat Modes */
+        src: url('/src/fonts/indigo/Indigo-Outline-Font-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/src/fonts/indigo/Indigo-Outline-Font-Regular.ttf.woff') format('woff'), /* Modern Browsers */
+        url('/src/fonts/indigo/Indigo-Outline-Font-Regular.ttf.svg') format('svg'); /* Legacy iOS */}
     
+body{font-family: 'body font';}
+
 
 h1 {
     color: rgb(14, 135, 91);
@@ -50,6 +50,7 @@ span{
 
 
 .inputs{
+    font-family: 'body font';
     /* @apply rgb(226, 226, 226) */
     border: 1px solid rgb(226, 226, 226);
     padding: 11.5px 8px;
