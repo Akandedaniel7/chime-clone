@@ -59,6 +59,15 @@ button{
     cursor: pointer;
 }
 
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
 /* Header */
 header h1{
     text-align: center;
@@ -67,7 +76,7 @@ header h1{
     font-size: 2.5rem;
 }
 
-input{
+ input{
     width: 100%;
     border: 1px solid var(--text);
     padding: 12px 0;
@@ -78,25 +87,27 @@ input{
     color: var(--text);
     font-weight: var(--lg-xm);
     padding-left: 7px;
-    display: block;
-}
+} 
 
-input:hover{
+ input:hover{
     border: 1px solid var(--borderColor)
-}
+} 
 
-.loginDetails{
+ .loginDetails{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
+form label{
+  width: 100%;
+}
+
 .btn{
     margin-top: 2rem;
     border-radius: 5px;
     background: var(--lightGreen);
-    /* padding: 12px 11.5rem; */
     color: var(--white);
     font-size: 19px;
     opacity: 0.89;
@@ -119,16 +130,16 @@ input:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: -14rem;
     flex-wrap: wrap;
+    float: left;
     font-size: 13px;
 }
 
-form{
-    width: 100%;
+.linkB{
+  margin-right: 2rem;
 }
 
-.loginDetails-link a{
+ .loginDetails-link a{
     display: block;
     color: var(--borderColor);
     font-weight: var(--lg-sm);
@@ -144,15 +155,11 @@ form{
     margin-bottom: 12px;
 }
 
-.linkB{
-    margin-right: 2rem;
-  }
-
-.paragraph-1{
+ .paragraph-1{
     margin-bottom: 2rem;
-    padding: 0px 29rem;
+    padding: 0px 30rem;
     text-align: center;
-}
+} 
 
 .paragraph-2{
     margin-top: 2.2rem;
@@ -161,36 +168,27 @@ form{
 
 .paragraph-3{
     margin-top: 1rem;
-    padding: 0 15rem;
+    padding: 0 19rem;
     font-size: 14px;
 }
 
 
 /* Sucessful Page */
-.input2{
-    width: 100%;
-    border: 1px solid var(--text);
-    padding: 12px 0;
-    margin: 4px 0;
-    font-size: 15px;
-    border-radius: 5px;
-    transition: var(--HoverTransition);
-    color: var(--text);
-    font-weight: var(--lg-xm);
-    padding-left: 7px;
+.form2{
+  width: 40%;
 }
 
-.input2:hover{
-    border: 1px solid var(--borderColor)
+/* Details Page */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-/* form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-} */
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 @media all and (max-width: 1110px){
     .paragraph-1 {
@@ -199,6 +197,10 @@ form{
 
       .paragraph-3 {
         padding: 0 11rem;
+      }
+
+      .form2{
+        width: 50%;
       }
 }
 
@@ -210,6 +212,16 @@ form{
       .paragraph-3 {
         padding: 0 5rem;
       }
+
+      .form2{
+        width: 60%;
+      }
+}
+
+@media all and (max-width: 780px){
+  .form2{
+    width: 70%;
+  }
 }
 
 @media all and (max-width: 650px){
@@ -219,6 +231,10 @@ form{
 
       .paragraph-3 {
         padding: 0 3rem;
+      }
+
+      .form2{
+        width: 80%;
       }
 }
 
@@ -231,16 +247,12 @@ form{
         padding: 0 14px;
       }
 
-      /* .btn {
-        padding: 12px 9.7rem;
-      } */
+      .form2{
+        width: 90%;
+      }
 
       .linkB{
         margin-right: 2rem;
-      }
-
-      .loginDetails-link {
-        margin-left: -10rem;
       }
 }
 
@@ -253,16 +265,12 @@ form{
         padding: 0 10px;
       }
 
-      /* .btn{
-        padding: 12px 7rem;
-      } */
+      .form2{
+        width: 100%;
+      }
 }
 
 @media all and (max-width: 350px){
-    .loginDetails-link {
-    margin-left: -10rem;
-  }
-
   .paragraph-2 {
     margin-top: 3rem;
   }
